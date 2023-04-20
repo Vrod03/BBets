@@ -39,16 +39,23 @@ The function will be given a class_size by number of students, odds, and Number_
 
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ## what is their average earnings
-## the standard deviation and a 95% confidence interval for their earnings?
+
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 ```{r}
+options(digits=1)
 teacher <- numeric(40)
 for(i in 1:40){
-teacher[i]=BrLw(odds = 4.35)
+teacher[i]=BrLw()
 }
-favstats(teacher)
+savestats <- favstats(teacher)
 ```
+
+From the information we can tell that Mr. BrLw is making an average of around `r savestats$mean` with a standard deviation of `r savestats$sd`
+
+## the standard deviation and a 95% confidence interval for their earnings?
+
+A 95% confidence level for BrLw's earning is `r savestats$mean - 2*savestats$sd` to `r savestats$mean + 2*savestats$sd` .
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero.
 
@@ -76,7 +83,7 @@ teacher[i]=BrLw(numClass = 29)
 favstats(teacher)
 ```
 
-29 people in the class would make a 2:1 betting odds fair. Any more or less students makes the teacher lose money or earn way too much. The better odds would be better if we could have half students but that very humaine.
+29 people in the class would make a 2:1 betting odds fair. Any more or less students makes the teacher lose money or earn way too much. The better odds would be better if we could have half students but that very humane.
 
 
 
@@ -84,4 +91,7 @@ favstats(teacher)
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+
+
+
 
