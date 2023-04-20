@@ -64,15 +64,19 @@ With the original odds given the mean was 280.975. With the given odds of 4.35 w
 
 
 
-
-
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
+```{r}
+teacher <- numeric(200)
+for(i in 1:200){
+teacher[i]=BrLw(numClass = 29)
+}
+favstats(teacher)
+```
 
-
-
+29 people in the class would make a 2:1 betting odds fair. Any more or less students makes the teacher lose money or earn way too much. The better odds would be better if we could have half students but that very humaine.
 
 
 
