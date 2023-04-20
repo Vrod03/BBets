@@ -52,7 +52,7 @@ favstats(teacher)
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero.
 
-With the original odds given the mean was 280.975. With the given odds of 4.35 with 40 Brownlows the mean is now 1.1525. We were able to plug in various odds and come to up with fair bet odds.
+With the original odds given the mean was 280.975. With the given odds of 4.35 with 40 Brownlows the mean is now 1.1525. We were able to plug in various odds and come to up with fair betting odds. Although the betting odds exact values will change 4.35 had the most consistently producing low mean value.
 
 
  
