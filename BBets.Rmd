@@ -93,5 +93,5 @@ favstats(teacher)
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
 
-
+In this experiment we learned that we can run code and find information without helper files. We built simulations to answer the questions for BrLw bets. On average for fair 2:1 betting odds 29 students in the class is best. While around 4.35 betting odds for profits to be close to 0. I liked this assigment it was pretty cool.
 
